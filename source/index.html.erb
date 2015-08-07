@@ -7,7 +7,7 @@ title: Le Wagon Middleman boilerplate
     <div class="col-xs-12 col-sm-3">
       <div class="feature">
         <h2>
-          <img src="images/chat.png" alt="">
+          <%= image_tag "chat.png", alt: "icon"%>
           Discuss best tools
         </h2>
         <p>
@@ -18,7 +18,7 @@ title: Le Wagon Middleman boilerplate
     <div class="col-xs-12 col-sm-3">
       <div class="feature">
         <h2>
-          <img src="images/mobile.png" alt="">
+          <%= image_tag "mobile.png" %>
           Always in sync
         </h2>
         <p>
@@ -29,7 +29,7 @@ title: Le Wagon Middleman boilerplate
     <div class="col-xs-12 col-sm-3">
       <div class="feature">
         <h2>
-          <img src="images/search.png" alt="">
+          <%= image_tag "search.png" %>
           Powerful search
         </h2>
         <p>
@@ -40,7 +40,7 @@ title: Le Wagon Middleman boilerplate
     <div class="col-xs-12 col-sm-3">
       <div class="feature">
         <h2>
-          <img src="images/heart.png" alt="">
+          <%= image_tag "heart.png" %>
           Share the love
         </h2>
         <p>
@@ -65,7 +65,7 @@ title: Le Wagon Middleman boilerplate
             <p>Very cool stuff, useful and smart</p>
           </span>
           <span class="card-user">
-            <img src='http://placehold.it/50x50' class="avatar avatar-bordered"/>
+            <%= image_tag 'http://placehold.it/50x50', class: "avatar avatar-bordered"%>
           </span>
           <a href="#" class="card-link"></a>
         </div>
@@ -82,7 +82,8 @@ title: Le Wagon Middleman boilerplate
           <span class="card-user">
             <img src='http://placehold.it/50x50' class="avatar avatar-bordered"/>
           </span>
-          <a href="#" class="card-link"></a>
+          <%= link_to "", "#", class: "card-link" %>
+          <!--<a href="#" class="card-link"></a>-->
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
@@ -135,4 +136,5 @@ title: Le Wagon Middleman boilerplate
       title:"You are here!"
     });
     </script>
+
 

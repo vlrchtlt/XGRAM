@@ -1,0 +1,16 @@
+---
+title: The Dream Team
+---
+<h1 class="text-center">La Dream Team</h1>
+
+<div class="container" id="DreamTeam">
+  <div class="row">
+    <% data.team.each do |mate| %>
+      <div class="col-md-6 text-center">
+        <%= image_tag mate.image, class: "img-circle small-image" %>
+        <h2><%= mate.name %></h2>
+        <%= link_to "Email", mate.info_contact %>
+      </div>
+    <% end %>
+  </div>
+</div>
